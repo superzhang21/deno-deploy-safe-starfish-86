@@ -19,6 +19,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: safe-starfish-86-v2
+          project: safe-starfish-86
           entrypoint: main.ts
           import-map: deno.json
+          token: ${{ secrets.DENO_DEPLOY_TOKEN }}
