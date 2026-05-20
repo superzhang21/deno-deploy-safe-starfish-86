@@ -22,4 +22,5 @@ jobs:
           project: safe-starfish-86
           entrypoint: main.ts
           import-map: deno.json
-          token: ${{ secrets.DENO_DEPLOY_TOKEN }}
+        env:
+          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
